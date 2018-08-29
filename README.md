@@ -20,6 +20,19 @@ $qrcode = new QrReader('path/to_image');
 $text = $qrcode->text(); //return decoded text from QR Code
 ```
 
+
+You can use such this.
+
+<?php 
+
+require_once("vendor/autoload.php");
+$qrcode = new Zxing\QrReader('images/qrcode.jpg');
+$text = $qrcode->text(); //return decoded text from QR Code
+echo $text;
+
+?>
+
+
 ## Requirements 
 * PHP >= 5.6
 * GD Library
