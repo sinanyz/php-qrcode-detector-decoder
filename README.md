@@ -23,14 +23,14 @@ $text = $qrcode->text(); //return decoded text from QR Code
 
 You can use such this.
 
-<?php 
 
+```php
 require_once("vendor/autoload.php");
 $qrcode = new Zxing\QrReader('images/qrcode.jpg');
 $text = $qrcode->text(); //return decoded text from QR Code
 echo $text;
+```
 
-?>
 
 
 ## Requirements 
